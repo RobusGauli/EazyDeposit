@@ -2,4 +2,4 @@ from sanic import Blueprint
 
 api = Blueprint('api')
 
-from . import branch
+from ezapi.api import branches

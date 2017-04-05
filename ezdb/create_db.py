@@ -22,6 +22,7 @@ def table_commands():
                         branch_code VARCHAR(255) NOT NULL UNIQUE,
                         created_at TIMESTAMPTZ DEFAULT Now(),
                         updated_at TIMESTAMPTZ DEFAULT Now(),
+                        verified BOOL DEFAULT 'f',
                         address VARCHAR(255),
                         remarks TEXT
                     );
